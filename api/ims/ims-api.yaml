@@ -30,7 +30,7 @@ paths:
                 $ref: '#/components/schemas/Error'
   /sessions:
     post:
-      description: User login 
+      description: User login
       operationId: login
       requestBody:
         content:
@@ -114,7 +114,7 @@ paths:
         content:
           application/json:
             schema:
-             $ref: '#/components/schemas/ChangePassword'
+              $ref: '#/components/schemas/ChangePassword'
       responses:
         '200':
           description:  Successful new password
@@ -329,7 +329,7 @@ components:
         token:
           type: string
       required:
-       - token
+        - token
     User:
       type: object
       required:
